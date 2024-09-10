@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary:#142D67;
+    --secondary: #154386;
+    --black:#333;
+    --white:#fff;
+    --border:.2rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgb(0,0,0,.1);
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: 5rem;
+}
+
+
+/* header awal */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+    z-index: 1000;
+}
+
+.header .logo{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.header .logo-container img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+.header .text-header{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.header .text-header span {
+    line-height: 1.2;
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    color: var(--black);
+    margin: 0 1rem;
+    text-decoration: none !important;
+    color: var(--primary);
+}
+
+.header .navbar a:hover{
+    color: var(--primary);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+  nav ul li {
+    margin: 0 1rem;
+}
+
+/* header akhir */
+
+
+/* tampilan detail anggota */
+
+.profile-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-header {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--secondary);
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+.profile-header h1 {
+    margin: 10px 0 5px;
+    color: var(--white);
+}
+.profile-header p {
+    color: rgb(205, 202, 202);
+    font-size: 15px;
+    margin: 0;
+}
+.profile-details {
+    padding: 20px;
+}
+.profile-details p {
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    justify-content: space-between;
+}
+.profile-details .label {
+    font-weight: bold;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 120px;
+}
+
+.team a {
+    background: rgb(220, 218, 218);
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--black);
+    width: 400px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.team-member .info {
+    flex: 1;
+}
+
+.team-member .info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.team-member .info p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+}
+
+.team-member .arrow {
+    font-size: 2rem;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+/* Tampilan Anggota Akhir */
+
+/* tampilan beranda awal */
+.beranda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px; 
+    background-color: var(--white);
+    text-align: center;
+}
+
+.beranda .content {
+    max-width: 1100px; 
+    padding-top: 75px;
+}
+
+.beranda h3 {
+    font-size: 2.5rem; 
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.beranda h4 {
+    font-size: 2rem; 
+    color: var(--primary); 
+    margin-bottom: 1rem;
+}
+
+.beranda img{
+    margin-right: 20px;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    width: 800px;
+}
+
+.beranda p {
+    font-size: 1.4rem;
+    color: var(--black); 
+    text-align: justify; 
+    margin-bottom: 1.5rem;
+    padding-top: 20px;
+}
+/* Tampilan Beranda Akhir */
+
+/* Tampilan Info Awal */
+.info{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.box-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0;
+}
+
+.box {
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+
+.info .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--secondary);
+    text-transform: none;
+}
+
+.info .box-container .box p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--black);
+    text-transform: none;
+}
+
+.info .box-container .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    background: var(--primary);
+    color: var(--white);
+    line-height: 4.5rem;
+    border-radius: 10%;
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin-right: .3rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover{
+    background: var(--secondary);
+}
+
+.footer .box-container .box .link{
+    display: block;
+    font-size: 1.7rem;
+    color: var(--primary);
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.footer .box-container .box .link:hover{
+    color: var(--hover);
+}
+
+/* Tampilan Info  Akhir*/
+
+
+/* Tampilan Aktivitas Awal */
+.activity-list {
+    margin: 110px;
+}
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--secondary);
+    font-size: 1.4rem;
+    overflow: hidden;
+    text-decoration: none;
+}
+.activity-item a {
+    text-decoration: none;
+    color: #333;
+}
+.activity-item a:hover {
+    text-decoration: underline;
+}
+.day {
+    font-weight: bold;
+}
+.date {
+    color: #666;
+}
+
+/* Tampilan Aktivitas Akhir */
+
+
+/* header untuk HP Awal */
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--primary);
+    display: none;
+}
+
+.header .navbar a:hover{
+    color: var(--primary);
+    border-bottom: .1rem solid var(--primary);
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar a{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    text-decoration: none !important;
+    color: var(--primary);
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header .btn{
+        display: none;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    nav ul{
+        display: none;
+    }
+
+    #menu-btn{
+        display: block;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background: var(--white);
+        border-top: var(--border);
+        padding: 1rem 0;
+        text-align: center;
+        flex-flow: column;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+    .home .content{
+        max-width: 50rem;
+    }
+}
+
+section#beranda {
+    text-align: center;
+    padding: 2rem;
+}
+  
+  section#beranda img {
+    max-width: 100%;
+    height: auto;
+}
+  
+  /* Gaya Daftar Aktivitas */
+  .activity-list {
+    display: grid;
+    gap: 1rem;
+}
+  
+  .activity-item {
+    background-color: #f4f4f4; /* Sesuaikan warna */
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+  
+  @media (max-width: 768px) {
+    .activity-list {
+      grid-template-columns: 1fr; /* Layout grid satu kolom untuk perangkat mobile */
+    }
+}
+
+/* header untuk HP Akhir */
