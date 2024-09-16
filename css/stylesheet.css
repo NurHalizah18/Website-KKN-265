@@ -172,7 +172,9 @@ nav ul {
     gap: 20px;
     padding: 20px;
     padding-top: 120px;
+    
 }
+
 
 .team a {
     background: rgb(220, 218, 218);
@@ -188,6 +190,11 @@ nav ul {
     text-decoration: none;
     color: var(--black);
     width: 400px;
+    transition: transform 0.2s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
 }
 
 .team-member img {
@@ -235,9 +242,10 @@ nav ul {
 }
 
 .beranda h3 {
-    font-size: 2.5rem; 
+    font-size: 2rem; 
     color: var(--primary);
     margin-bottom: 1rem;
+    padding-top: 25px;
 }
 
 .beranda h4 {
@@ -250,7 +258,7 @@ nav ul {
     margin-right: 20px;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-    width: 800px;
+    width: 450px;
 }
 
 .beranda p {
@@ -339,13 +347,14 @@ nav ul {
 /* Tampilan Aktivitas Awal */
 .activity-list {
     margin: 110px;
+
 }
 .activity-item {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px solid var(--secondary);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     overflow: hidden;
     text-decoration: none;
 }
@@ -465,7 +474,7 @@ section#beranda {
 }
   
   .activity-item {
-    background-color: #f4f4f4; /* Sesuaikan warna */
+    background-color: #f4f4f4; 
     padding: 1rem;
     border-radius: 0.5rem;
 }
